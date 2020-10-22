@@ -2,14 +2,25 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CustomCars - Veja nossos projetos</title>
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/grid.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/portfolio.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <meta
+      name="description"
+      content="Monte seu carro na CustomCars. Personalizamos carros de corrida, drift e rally."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CustomCars - Veja nossos projetos<" />
+    <meta
+      property="og:description"
+      content="Monte seu carro na CustomCars. Personalizamos carros de corrida, drift e rally."
+    />
+    <meta property="og:url" content="http://customcars.com" />
+    <meta
+      property="og:image"
+      content="http://customcars.com/img/og-image.png"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link
       rel="android-chrome-192x192"
@@ -35,7 +46,15 @@
       href="img/favicon/favicon-16x16.png"
     />
 
-    <title>Custom Cars</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
   </head>
 
   <body>
@@ -65,15 +84,15 @@
 
     <section class="inner-introduction inner-portfolio">
       <div class="container">
-        <h1>Portfólio</h1>
-        <p>Conheça os nossos projetos</p>
+        <h1 data-anime="400" class="fadeInDown">Portfólio</h1>
+        <p data-anime="800" class="fadeInDown">Conheça os nossos projetos</p>
       </div>
     </section>
 
     <!-- Frase -->
 
     <section class="container">
-      <blockquote class="quote-frase">
+      <blockquote data-anime="1200" class="fadeInDown quote-frase">
         <p>
           “Eu continuo encarando cada treino, cada corrida, cada teste como um
           grande desafio, não importa os três campeonatos, as vitórias, todas as
@@ -86,7 +105,7 @@
     <!-- Portfólio -->
 
     <section class="portfolio">
-      <div class="container">
+      <div class="container" data-slide="portfolio">
         <ul class="portfolio-lista">
           <li class="grid-8">
             <img src="img/portfolio/portfolio-1.jpg" alt="CustomCars Bimmers" />
@@ -101,17 +120,31 @@
             />
           </li>
         </ul>
+        <ul class="portfolio-lista">
+          <li class="grid-8">
+            <img
+              src="img/portfolio/portfolio2-1.jpg"
+              alt="CustomCars Porsche"
+            />
+          </li>
+          <li class="grid-8">
+            <img src="img/portfolio/portfolio2-2.jpg" alt="CustomCars AMG" />
+          </li>
+          <li class="grid-16">
+            <img src="img/portfolio/portfolio2-3.jpg" alt="CustomCars Dodge" />
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- Quebra -->
 
-    <section class="quebra">
+    <div class="quebra">
       <blockquote class="quote-externo quote-white container">
         <p>“Na adversidade, uns desistem, enquanto outros batem recordes.”</p>
         <cite>Ayrton Senna</cite>
       </blockquote>
-    </section>
+    </div>
 
     <!-- Footer -->
 
@@ -165,5 +198,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/simple-anime.js"></script>
+    <script src="js/simple-slide.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

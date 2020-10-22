@@ -410,3 +410,79 @@ img {
   padding: 20px 0;
   color: #fff;
 }
+
+/* JavaScript */
+
+/* Carrosel */
+
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+  z-index: 1;
+}
+
+/* Para a navegação - Carrossel*/
+.js [data-slide-nav] {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.js [data-slide-nav] > button {
+  display: inline-block;
+  width: 12px;
+  margin: 4px;
+  height: 12px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  background: #1d1d1d;
+  text-indent: -100px;
+  overflow: hidden;
+  outline: none;
+}
+.js [data-slide-nav] > button.active {
+  background: #f84b07;
+  outline: none;
+}
+
+/* Animação */
+
+.js [data-anime] {
+  opacity: 0;
+}
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}
+
+/* Formulário anti-spam */
+
+.nao-aparece {
+  visibility: hidden;
+  position: absolute;
+  height: 0px;
+}
+
+/* Formulário */
+
+#form-erro {
+  color: #f64540;
+}
+
+#form-sucesso {
+  color: #31aa39;
+}

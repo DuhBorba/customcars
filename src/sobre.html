@@ -2,14 +2,25 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CustomCars - Conheça nossa história</title>
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/grid.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/sobre.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <meta
+      name="description"
+      content="Monte seu carro na CustomCars. Personalizamos carros de corrida, drift e rally."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CustomCars - Conheça nossa história" />
+    <meta
+      property="og:description"
+      content="Monte seu carro na CustomCars. Personalizamos carros de corrida, drift e rally."
+    />
+    <meta property="og:url" content="http://customcars.com" />
+    <meta
+      property="og:image"
+      content="http://customcars.com/img/og-image.png"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link
       rel="android-chrome-192x192"
@@ -35,7 +46,15 @@
       href="img/favicon/favicon-16x16.png"
     />
 
-    <title>Custom Cars</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sobre.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
   </head>
 
   <body>
@@ -65,8 +84,10 @@
 
     <section class="inner-introduction inner-sobre">
       <div class="container">
-        <h1>Sobre</h1>
-        <p>Conheça mais sobre a Custom Cars</p>
+        <h1 data-anime="400" class="fadeInDown">Sobre</h1>
+        <p data-anime="800" class="fadeInDown">
+          Conheça mais sobre a Custom Cars
+        </p>
       </div>
     </section>
 
@@ -124,12 +145,12 @@
 
     <!-- Quebra -->
 
-    <section class="quebra">
+    <div class="quebra">
       <blockquote class="quote-externo quote-white container">
         <p>“Na adversidade, uns desistem, enquanto outros batem recordes.”</p>
         <cite>Ayrton Senna</cite>
       </blockquote>
-    </section>
+    </div>
 
     <!-- Footer -->
 
@@ -183,5 +204,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/simple-anime.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

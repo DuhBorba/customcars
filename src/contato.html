@@ -2,14 +2,25 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CustomCars - Contato - 19 99999-9999</title>
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/grid.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/contato.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <meta
+      name="description"
+      content="Monte seu carro na CustomCars. Personalizamos carros de corrida, drift e rally."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CustomCars - Contato - 19 99999-9999" />
+    <meta
+      property="og:description"
+      content="Monte seu carro na CustomCars. Personalizamos carros de corrida, drift e rally."
+    />
+    <meta property="og:url" content="http://customcars.com" />
+    <meta
+      property="og:image"
+      content="http://customcars.com/img/og-image.png"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link
       rel="android-chrome-192x192"
@@ -35,7 +46,15 @@
       href="img/favicon/favicon-16x16.png"
     />
 
-    <title>Custom Cars</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contato.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
   </head>
 
   <body>
@@ -65,24 +84,46 @@
 
     <section class="inner-introduction inner-contato">
       <div class="container">
-        <h1>Contato</h1>
-        <p>Tire suas dúvidas conosco.</p>
+        <h1 data-anime="400" class="fadeInDown">Contato</h1>
+        <p data-anime="800" class="fadeInDown">Tire suas dúvidas conosco.</p>
       </div>
     </section>
 
     <!-- Contato -->
 
     <section class="contato container">
-      <form id="form-orcamento" class="contato-form grid-8">
+      <form
+        id="form-orcamento"
+        method="POST"
+        action="enviar.php"
+        class="contato-form grid-8 formphp"
+      >
         <label for="nome">Nome</label>
-        <input type="text" id="nome" />
+        <input type="text" id="nome" name="nome" required />
         <label for="email">E-mail</label>
-        <input type="text" id="email" />
+        <input type="email" id="email" name="email" required />
         <label for="telefone">Telefone</label>
-        <input type="text" id="telefone" />
-        <label for="espec">Especificações</label>
-        <textarea id="espec"></textarea>
-        <button type="submit" class="btn">Enviar</button>
+        <input type="text" id="telefone" name="telefone" />
+
+        <label class="nao-aparece"
+          >Se você não é um robo, deixe em branco.</label
+        >
+        <input type="text" class="nao-aparece" name="leaveblank" />
+        <label class="nao-aparece"
+          >Se você não é um robo, não mude este campo.</label
+        >
+        <input
+          type="text"
+          class="nao-aparece"
+          name="dontchange"
+          value="http://"
+        />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        <button type="submit" id="enviar" name="enviar" class="btn">
+          Enviar
+        </button>
       </form>
       <div class="contato-dados grid-8">
         <h3>Dados</h3>
@@ -128,12 +169,12 @@
 
     <!-- Quebra -->
 
-    <section class="quebra">
+    <div class="quebra">
       <blockquote class="quote-externo quote-white container">
         <p>“Na adversidade, uns desistem, enquanto outros batem recordes.”</p>
         <cite>Ayrton Senna</cite>
       </blockquote>
-    </section>
+    </div>
 
     <!-- Footer -->
 
@@ -187,5 +228,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/simple-anime.js"></script>
+    <script src="js/simple-form.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
