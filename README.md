@@ -18,8 +18,7 @@
 ![GIF Contato do projeto](https://github.com/DuhBorba/site-customcars/blob/main/demo-contato.gif)
 
 ## Sobre este projeto
-Esse projeto foi um dos desafios do Bootcamp Full Stack do [IGTI - Instituto de Gestão e Tecnologia da Informação](https://www.igti.com.br/), 
-para fixar os conceitos dados em aula, o principal objetivo era criar uma aplicação para a visualização de cores a partir da escala RGB
+Site criado durante o curso Web Design Completo da [Origamid](https://www.origamid.com/). O projeto foi construido em HTML, CSS puro, alguns plugins de JavaScript e PHPMailer para o formulário.
 
 ### Enunciado do trabalho
 * [Enunciado](https://github.com/DuhBorba/RGB-Color/blob/master/enunciado.pdf)
