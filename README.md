@@ -20,9 +20,6 @@
 ## Sobre este projeto
 Site criado durante o curso Web Design Completo da [Origamid](https://www.origamid.com/). O projeto foi construido em HTML, CSS puro, alguns plugins de JavaScript e PHPMailer para o formulário.
 
-### Enunciado do trabalho
-* [Enunciado](https://github.com/DuhBorba/RGB-Color/blob/master/enunciado.pdf)
-
 ### Origamid
 A Origamid é um Centro de Treinamento no Rio de Janeiro. A mesma fornece Cursos de Web Design, UX/UI Design, HTML, CSS, JavaScript, React, etc...
 
